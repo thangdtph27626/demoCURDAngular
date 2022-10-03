@@ -70,10 +70,9 @@ index.html
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 - Tạo tệp main.js trong cùng một thư mục và tham chiếu tệp đó bằng thẻ script:
   <script src="main.js" type="text/javascript"></script> \
-  
  
-  ```md
-<body ng-app="demo_product">
+ ```
+ <body ng-app="demo_product">
     <div ng-controller="myctrl">
         <div class="m-portlet">
             <div class="m-portlet">
@@ -160,11 +159,10 @@ index.html
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="main.js" type="text/javascript"></script>
 </body>
-  
-```
 
+ ```
 
-
+### 3: 
 
   
 ```md
@@ -248,3 +246,5 @@ $scope.edit = function(){
 
   
   ```
+  
+  > bạn có thể lấy toàn bộ source code [tại đây](https://github.com/thangdtph27626/demoCURDAngular.github.io)
