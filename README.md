@@ -67,8 +67,9 @@ index.html
 - Thêm tập lệnh dưới đây vào bên trong thẻ <head> của tệp html. Đó là liên kết CDN sẽ giúp bắt đầu với Angular.\
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 - Tạo tệp main.js trong cùng một thư mục và tham chiếu tệp đó bằng thẻ script:
-  <script src="main.js" type="text/javascript"></script>
+  <script src="main.js" type="text/javascript"></script> 
   
+ 
  
   ```
   
