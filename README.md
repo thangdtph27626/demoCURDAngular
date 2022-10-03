@@ -62,12 +62,14 @@ sau khi bạn tạo api sẽ có đường dẫn api sau: https://63379dcf132b46
 
 index.html
 
-> lưu ý \
+> lưu ý:
+
 - Thêm tập lệnh dưới đây vào bên trong thẻ <head> của tệp html. Đó là liên kết CDN sẽ giúp bắt đầu với Angular.\
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 - Tạo tệp main.js trong cùng một thư mục và tham chiếu tệp đó bằng thẻ script:
   <script src="main.js" type="text/javascript"></script>
   
+ 
   ```
   
   <!DOCTYPE html>
@@ -171,6 +173,7 @@ index.html
 </html>
   
   ```
+ 
 ### b3: hiển thị thông tin product lên màn hình
   
 ```
