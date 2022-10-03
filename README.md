@@ -162,12 +162,13 @@ index.html
 </body>
   
 ```
-  
-  
-### b3: hiển thị thông tin product lên màn hình
-  
+
+
+
+
   
 ```md
+
   // đường dẫn api khởi tạo ở bước 1
   let productAPI = "https://63379dcf132b46ee0be3304d.mockapi.io/api/products"
   
