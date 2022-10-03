@@ -58,31 +58,21 @@ sau khi bạn tạo api sẽ có đường dẫn api sau: https://63379dcf132b46
           </tbody>
 </table>
 
+
 ### b2: tạo file html
+
 
 index.html
 
 > lưu ý:
 
-- Thêm tập lệnh dưới đây vào bên trong thẻ <head> của tệp html. Đó là liên kết CDN sẽ giúp bắt đầu với Angular.\
+- Thêm tập lệnh dưới đây vào bên trong thẻ <> của tệp html. Đó là liên kết CDN sẽ giúp bắt đầu với Angular.\
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 - Tạo tệp main.js trong cùng một thư mục và tham chiếu tệp đó bằng thẻ script:
-  <script src="main.js" type="text/javascript"></script> 
+  <script src="main.js" type="text/javascript"></script> \
   
  
- 
-  ```
-  
-  <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootrap/bootstrap.min (1).css">
-    <title>Document</title>
-
+  ```md
 <body ng-app="demo_product">
     <div ng-controller="myctrl">
         <div class="m-portlet">
@@ -170,14 +160,14 @@ index.html
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="main.js" type="text/javascript"></script>
 </body>
-
-</html>
-  
-  ```
- 
-### b3: hiển thị thông tin product lên màn hình
   
 ```
+  
+  
+### b3: hiển thị thông tin product lên màn hình
+  
+  
+```md
   // đường dẫn api khởi tạo ở bước 1
   let productAPI = "https://63379dcf132b46ee0be3304d.mockapi.io/api/products"
   
@@ -199,15 +189,15 @@ $http.get(productAPI)
 .catch(function(e){
     console.log(e)
 })
-
-
 ```
+  
   
 > lưu ý: 
   
   $http.get(url).then().catch() là viết tắt của $http({method : "GET", url : url}).then().catch()
   
-  2: thêm mới products
+  
+### 4: thêm mới products
   
   
   ```
@@ -220,7 +210,7 @@ $http.get(productAPI)
   
   ```
  
-  3: update sản phẩm
+### 5: update sản phẩm
   
   ```
   
@@ -242,7 +232,7 @@ $scope.edit = function(){
         .catch(function(e){console.log(e)})}
   ```
 
-4 delete 
+### 5: delete 
   
   ```
   $scope.delete = function(item){
