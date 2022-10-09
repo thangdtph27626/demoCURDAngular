@@ -45,7 +45,7 @@
                     
                         <button type="submit" class="btn btn-primary">thêm 
                         </button>
-                        <button type="submit" class="btn btn-primary" ng-click="edit($index)"> sửa
+                        <button type="submit" class="btn btn-primary" > sửa
                         </button>
                     </div>
                 </form>
@@ -75,13 +75,13 @@
                                 <td>{{product.gia_ban}}</td>
                                 <td>{{product.mieu_ta}}</td>
                                 <td>
-                                    <button type="button" class="btn btn-primary" ng-click="selectProduct(product)">
+                                    <button type="button" class="btn btn-primary" ng-click="selectProduct($index)">
                                         Sửa
                                     </button>
                                 </td>
 
                                 <td> <button type="button" class="btn btn-danger" data-bs-toggle="modal"
-                                        ng-click="delete(product)">
+                                        ng-click="delete($index)">
                                         Xoá
                                     </button>
                                 </td>
