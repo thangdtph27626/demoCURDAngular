@@ -38,7 +38,7 @@ app.controller("myctrl", function ($scope, $http) {
     $http
       .put(productAPI + "/" + id, $scope.product)
       .then(function () {
-        viTriHienTai = -1;
+        $scope.viTriHienTai = -1;
         $scope.products.splice($scope.viTriHienTai, 1, $scope.product)
       })
       .catch(function (e) {
