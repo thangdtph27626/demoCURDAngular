@@ -38,8 +38,17 @@ app.controller("myctrl", function ($scope, $http) {
     $http
       .put(productAPI + "/" + id, $scope.product)
       .then(function () {
-        $scope.viTriHienTai = -1;
+        
         $scope.products.splice($scope.viTriHienTai, 1, $scope.product)
+        $scope.viTriHienTai = -1;
+         $scope.product = {
+          id: "",
+          ten: "",
+          so_luong: "",
+          gia_nhap: "",
+          gia_ban: "",
+          mieu_ta: "" 
+        }; 
       })
       .catch(function (e) {
         console.log(e);
